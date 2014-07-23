@@ -2,6 +2,8 @@ Hubot TeamSpeak Tracker
 =====================
 Allows Hubot to track who enters/exits a TeamSpeak server, as well as report on who is currently connected
 
+[![NPM](https://nodei.co/npm/hubot-teamspeak-track.png?downloads=true)](https://nodei.co/npm/hubot-teamspeak-track/)
+
 Configuration
 ============
 * HUBOT_TEAMSPEAK_IP
