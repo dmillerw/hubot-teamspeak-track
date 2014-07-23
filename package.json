@@ -1,0 +1,23 @@
+{
+  "name": "hubot-teamspeak-track",
+  "version": "1.0.0",
+  "description": "Allows Hubot to track who enters/exits a TeamSpeak server, as well as report on who is currently connected",
+  "main": "index.coffee",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dmillerw/hubot-teamspeak-track"
+  },
+  "keywords": [
+    "hubot",
+    "teamspeak"
+  ],
+  "author": "dmillerw",
+  "license": "MIT",
+  "dependencies": {
+    "hubot": ">= 2.4.0",
+    "node-teamspeak": ">= 1.0.4"
+  }
+}
