@@ -22,6 +22,7 @@
 host = process.env.HUBOT_TEAMSPEAK_IP
 user = process.env.HUBOT_TEAMSPEAK_USER
 password = process.env.HUBOT_TEAMSPEAK_PASSWORD
+voice_port = process.env.HUBOT_TEAMSPEAK_VOICE_PORT
 enabled = true
 
 TeamSpeak = require 'node-teamspeak'
@@ -50,6 +51,8 @@ module.exports = (robot) ->
         robot.send {room: room}, message
 
     client.send "login", {client_login_name: user, client_login_password: password}, (err, resp) ->
+      if voice_port
+        client.send "use", {port: voice_port}
       client.send "servernotifyregister", {event: "server"}
 
       client.on "cliententerview", (event) ->
