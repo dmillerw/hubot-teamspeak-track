@@ -1,6 +1,6 @@
 {
   "name": "hubot-teamspeak-track",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Allows Hubot to track who enters/exits a TeamSpeak server, as well as report on who is currently connected",
   "main": "index.coffee",
   "scripts": {
